@@ -25,11 +25,11 @@ public class User extends ParentEntity{
 	@Column(name="segundo_apellido", nullable=true, length=255)
 	  private String segundoApellido;
 	
-	@Column(name="telefono", nullable=true, length=255)
-	  private String Telefono;
+	@Column(name="telefono", nullable=true, length=30)
+	  private String telefono;
 	
-	@Column(name="correo", nullable=false, length=255)
-	  private String Correo;
+	@Column(name="correo", nullable=false, length=150)
+	  private String correo;
 
 	public String getPrimerNombre() {
 		return primerNombre;
@@ -64,19 +64,19 @@ public class User extends ParentEntity{
 	}
 
 	public String getTelefono() {
-		return Telefono;
+		return telefono;
 	}
 
 	public void setTelefono(String telefono) {
-		Telefono = telefono;
+		this.telefono = telefono;
 	}
 
 	public String getCorreo() {
-		return Correo;
+		return correo;
 	}
 
 	public void setCorreo(String correo) {
-		Correo = correo;
+		this.correo = correo;
 	}
-	
+
 }
